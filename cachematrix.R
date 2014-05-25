@@ -3,6 +3,9 @@
 
 ## Write a short comment describing this function
 
+# this function has all the other functions to build and set the received matrix
+# as parameter
+
 makeCacheMatrix <- function(x = matrix()){
      
      inverseMatrix <- NULL
@@ -24,6 +27,10 @@ makeCacheMatrix <- function(x = matrix()){
 
 
 ## Write a short comment describing this function
+
+# this function verifies is the inverve has been already calculated and returns it
+# otherwise it uses solve() function to calculate it and set it within the object
+# received as parameter
 
 cacheSolve <- function(x, ...){
       inverseMatrix <- x$getInverse()
